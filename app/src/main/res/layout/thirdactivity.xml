@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textVie5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benchmark Test"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="SHA-1: Encrypts Data\nhttps://en.wikipedia.org/wiki/SHA-1\n\nMD5: Checks data integrity\nhttps://en.wikipedia.org/wiki/MD5\n\nBrute Force: Load handling\nhttps://en.wikipedia.org/wiki/Brute-force_attack"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:typeface="monospace"
+        android:layout_below="@+id/textVie5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp" />
+
+    <Button
+        android:drawableTop="@drawable/ic_action_phone_start"
+        android:id="@+id/btn5"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Contact Me"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        android:layout_marginStart="22dp"
+        android:layout_alignBottom="@+id/btn8"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:drawableTop="@drawable/ic_action_phone"
+        android:id="@+id/btn8"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onInfo"
+        android:text="Device Info"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

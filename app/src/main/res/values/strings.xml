@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Benchmark</string>
+    <string name="teststring">The big bad wolf</string>
+    <string name="sha"><u>INITIATE SEQUENCE</u></string>
+    <string name="md5"><a href="http://www.google.com">MD5:</a> Checks data integrity</string>
+    <string name="bforce"><a href="9gag.com" target="_top">Brute Force:</a>Load handling</string>
+</resources>

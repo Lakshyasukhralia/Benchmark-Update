@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_read_write"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+
+
+    tools:context="com.sukhralia.lakshya.benchmark2.ReadWriteActivity"
+    android:weightSum="1">
+
+
+    <EditText
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtData"
+        android:layout_width="fill_parent"
+        android:layout_height="180px"
+        android:textSize="22dp"
+        android:layout_marginTop="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:text="Write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/W"
+        android:textSize="22dp"
+        android:layout_weight="0.14"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/btnReadSDFile"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:text="Read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/R"
+        android:textSize="22dp"
+        android:layout_weight="0.10"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/W"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@color/colorPrimary"
+        android:onClick="Write"
+        android:textSize="20dp"
+        android:drawableTop="@drawable/ic_action_edit"
+        android:id="@+id/btnWriteSDFile"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:text="Write SD File"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_toStartOf="@+id/btnReadSDFile" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@color/colorPrimary"
+        android:onClick="Read"
+        android:id="@+id/btnReadSDFile"
+        android:layout_width="109dp"
+        android:textSize="20dp"
+        android:drawableTop="@drawable/ic_action_glasses"
+        android:layout_height="42px"
+        android:text="Read SD File"
+        android:layout_weight="0.10"
+        android:layout_alignBottom="@+id/btnWriteSDFile"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/btnWriteSDFile" />
+
+    <ImageButton
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@color/colorPrimary"
+        android:onClick="Clear"
+        android:textSize="20dp"
+        android:src="@drawable/ic_action_reload"
+        android:id="@+id/btnClear"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtData"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="@color/colorPrimary"
+        android:onClick="Output"
+        android:textSize="20dp"
+        android:drawableTop="@drawable/ic_action_process_start"
+        android:id="@+id/Output"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:text="Output Score"
+        android:layout_above="@+id/W"
+        android:layout_toEndOf="@+id/btnReadSDFile" />
+
+</RelativeLayout>
